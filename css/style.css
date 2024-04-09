@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+/*Add padding and margin to space out the page.
+Make the font larger too.*/
+body{
+	margin:1%;
+	font-size:125%;
+	background-color: #cfebb6;
+	font-family: 'Fredoka One', sans-serif;
+}
+
+/*Make the h1 heading bigger with a bold font*/
+h1{
+	font-size: 2em; 
+	font-weight: bold;
+	text-align: center;
+}
+
+header{
+	background-color: #f194b8;
+}
+
+a{
+	text-align: center;
+	text-decoration: none;
+}
+
+.active{
+	background: white;
+    text-transform: uppercase;
+	text-align: center;
+	color:#000;
+}
+
+.active a{
+	text-decoration: none;
+}
+
+
+img{
+    /* height: 150px;
+	width:auto; */
+    border: 3px solid blue;
+    border-radius: 20px;
+}
+
+/*Make the h2 heading match h1*/
+h2{
+	font-size: 2em; 
+	font-weight: bold;
+	text-align: center;
+}
+
+/*Improve the spacing for paragraphs AND headings*/
+p, h1, h2 {
+    padding: 10px;
+}
+
+h3 {
+    padding: 10px;
+	text-align: center;
+	font-size: 30px;
+}
+
+/*Add borders around the main components and some
+space too*/
+
+header, footer{
+	border-style: solid;
+	border-width: 3px;
+	border-color: green;
+	margin: 10px 0;
+}
+
+/* FIXME if it causes probs nav? */
+main{
+	margin: 10px 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+	border:#000 solid 2px
+}
+
+/*Change the styling for all of the list 
+items in the nav section*/
+nav ul li{
+	/* margin-left: 3px; */
+	background-color: #aef74f;
+	padding:10px;
+	border:1px solid black;
+	/* display: inline-block;
+	width: 23%; */
+	text-align: center;
+	justify-content: space-between;
+	align-content: center;
+	margin: 0px;
+}
+
+/*Added this so the links stay the same color*/
+a:visited{color:#0000FF}
+
+a.skip-main {
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-1;
+}
+a.skip-main:focus, a.skip-main:active {
+    color: #fff;
+    background-color:#000;
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow:auto;
+    margin: 10px 35%;
+    padding:5px;
+    border-radius: 15px;
+    border:4px solid yellow;
+    text-align:center;
+    font-size:1.2em;
+    z-index:999;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+	grid-auto-rows: minmax(100px, auto);
+	border-style: solid;
+	border-width: 3px;
+	border-color: green;
+  }
+
+  .one {
+	grid-column: 1 / 2;
+	grid-row: 1;
+	background-color: #f8b8d0;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 10px;
+  }
+  .two {
+	grid-column: 2 / 4;
+	grid-row: 1 / 2;
+	background-color: #b3c7f7;
+	text-align: center;
+	padding: 10px;
+  }
+
+  .three {
+	grid-column: 1 / 3;
+	grid-row: 1;
+	background-color: #b3c7f7;
+	text-align: center;
+	padding: 10px;
+  }
+
+  .four {
+	grid-column: 3 / 4;
+	grid-row: 1;
+	background-color: #b9e192;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 10px;
+  }
+
+  .five {
+	grid-column: 1 / 3;
+	grid-row: 1;
+	background-color: #b3c7f7;
+	text-align: center;
+	padding: 10px;
+  }
+
+  .pets-one {
+	grid-column: 1 / 3;
+	grid-row: 1;
+	padding: 10px;
+	background-color: #b3c7f7;
+  }
+  .pets-three {
+	grid-column: 1 / 3;
+	grid-row: 2;
+	background-color: #f8b8d0;
+	padding-left: 20px;
+	padding-bottom: 10px;
+  }
+  .pets-two {
+	grid-column: 3;
+	grid-row: 1 / 3;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	background-color: #b9e192;
+  }
+
+  .recipe-one {
+	grid-column: 1 / 4;
+	grid-row: 1;
+	background-color: #f8b8d0;
+	padding: 10px;
+  }
+  .recipe-two {
+	grid-column: 1 / 4;
+	grid-row: 2;
+	background-color: #b9e192;
+	padding: 10px;
+	text-align: center;
+  }
+  .recipe-three {
+	grid-column: 1 / 4;
+	grid-row: 3;
+	background-color: #b3c7f7;
+	padding: 10px;
+	padding-left: 40px;
+  }
+  .recipe-four {
+	grid-column: 1/4;
+	grid-row: 4;
+	background-color: #b9e192;
+	padding: 10px;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+  }
+
+  img.center {
+    display: block;
+    margin: 0 auto;
+	margin-bottom: 5px;
+}
+
+img.center-recipe {
+    display: block;
+    margin: 0 auto
+}
+
+h2.main{
+	font-size: 20px;
+}
+
+.travel-wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+	grid-auto-rows: minmax(100px, auto);
+  }
+
+  .travel-one {
+	grid-column: 1 / 2;
+	grid-row: 1;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 10px;
+  }
+  .travel-two {
+	grid-column: 2 / 2;
+	grid-row: 1;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 10px;
+  }
+
+  div.travel{
+	border-style: solid;
+	border-width: 3px;
+	border-color: green;
+  }
+
+  footer{
+    background-image: repeating-linear-gradient(#CFEBB6, #B9E192 25%, #B3C7F7 65%, #F8B8D0 80%, #F194B8);
+    border-style: solid;
+    border-color:#ffffff;
+    border-width: 5px;
+	margin-bottom: 100px;
+}
+
+  footer p{
+    font-size: 20px;
+    text-align: right;
+    padding: 15px;
+    padding-left: 0px;
+}
+
+  nav {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: #f194b8;
+	height: auto;
+	padding: 10px;
+}
+
+.travel picture {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+	text-align: center; /* Center the content horizontally */
+}
+
+.travel {
+    text-align: center; /* Center the content horizontally */
+}
+
+/* @media (prefers-reduced-motion) {
+} */
+
+@media (min-width: 700px){
+	nav {
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 70px;
+		height: 100%;
+		padding: 10px;
+	}
+
+	nav ul {
+		margin: 0;
+		padding: 0;
+		display: grid;
+		grid-template-rows: repeat(4, 1fr);
+		height: 100%;
+		grid-auto-flow: column;
+	}
+	
+	nav ul li {
+		writing-mode: vertical-lr; /* Set writing mode to vertical left-to-right */
+		transform: rotate(180deg); /* Rotate the text for proper orientation */
+		transform-origin: center; /* Set rotation origin */
+	}
+	header, main, footer {
+		margin-right: 70px;
+	}
+
+	.recipe-one {
+		grid-column: 1 / 3;
+		grid-row: 1;
+	  }
+	  .recipe-two {
+		grid-column: 1 / 3;
+		grid-row: 2;
+	  }
+	  .recipe-three {
+		grid-column: 1 / 3;
+		grid-row: 3;
+	  }
+	  .recipe-four {
+		grid-column: 3;
+		grid-row: 1 / 4;
+		display: flex;
+		flex-direction: column;
+	  }
+}
+
+@media (min-width: 900px){
+	nav {
+		left: 0;
+		width: auto;
+		height: 50px;
+		padding: 0px;
+		overflow-y: auto; /* Add scrollbar if content overflows vertically */
+	}
+
+	nav ul {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		height: 50px;
+		grid-auto-flow: row;
+		margin: 0px;
+		/* border:fuchsia solid 2px */
+	}
+	
+	nav ul li {
+		writing-mode: initial;
+		transform: none
+	}
+	header, main, footer {
+		margin-right: 0px;
+	}
+	header {
+		margin-top: 70px;
+	}
+	.wrapper {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 10px;
+		grid-auto-rows: minmax(100px, auto);
+		border-style: solid;
+		border-width: 3px;
+		border-color: green;
+	  }
+	
+	  .one {
+		grid-column: 1 / 4;
+		grid-row: 1;
+	  }
+	  .two {
+		grid-column: 1 / 4;
+		grid-row: 2;
+	  }
+	
+	  .three {
+		grid-column: 1 / 4;
+		grid-row: 3;
+	  }
+	
+	  .four {
+		grid-column: 1 / 4;
+		grid-row: 1;
+	  }
+	  .five {
+		grid-column: 1 / 4;
+		grid-row: 2;
+		background-color: #b3c7f7;
+		text-align: center;
+		padding: 10px;
+	  }
+
+}
+
+.row > .column {
+	padding: 0 8px;
+  }
+  
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* Create four equal columns that floats next to eachother */
+  .column {
+	float: left;
+	width: 25%;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: black;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	width: 70%;
+	max-width: 1200px;
+  }
+  
+  /* The Close Button */
+  .close {
+	color: white;
+	position: absolute;
+	top: 10px;
+	right: 25px;
+	font-size: 35px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #999;
+	text-decoration: none;
+	cursor: pointer;
+  }
+  
+  /* Hide the slides by default */
+  .mySlides {
+	display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+  }
+  
+  /* Caption text */
+  .caption-container {
+	text-align: center;
+	background-color: black;
+	padding: 2px 16px;
+	color: white;
+  }
+  
+  img.demo {
+	opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+	opacity: 1;
+  }
+  
+  img.hover-shadow {
+	transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+
+.thumbnails-container {
+    display: flex;
+    overflow-x: auto;
+    margin: 10px;
+	justify-content: space-between;
+}
+
+.demo {
+    flex: auto;
+    width: 150px;
+    cursor: pointer;
+}

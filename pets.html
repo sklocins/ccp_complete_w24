@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+    <title>Pets</title>
+</head>
+<body>
+    <script src="js/script.js"></script>
+    <a class="skip-main" href = "#main">Skip to Main Content</a>
+    <header>
+        <nav>
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li class="active"><a href = "pets.html">Pets</a></li>
+                <li><a href = "recipes.html">Recipes</a></li>
+                <li><a href = "travel.html">Travel</a></li>
+            </ul>
+        </nav>
+        <h1>Pets</h1>
+
+    </header>
+    <main id="main">
+        <!-- Images used to open the lightbox -->
+        <div class = "wrapper">
+            <div class = "pets-one">
+                <h2>Wren</h2>
+                <img src="images/wren.jpg" class= "center" width = "400" alt="Tan and white dog lying on couch surrounded by Christmas lights" onclick="openModal();currentSlide(1)" class="hover-shadow">
+
+                <p>Wren is a tan and brown dog of about 60 lbs.</p>
+
+                <p>Wren is a 10 year old rescue pitbull. We rescued her when she was about one and half years old. She is very sassy, sweet, and silly. She loves to cuddle, play ball, play with her brother, play games she/we make up, and especially she loves to eat.</p>
+
+                <p>Sometimes she plays a game with herself where she chews a head-sized whole in a dog bed, put a toy inside, throws the bed around a few times, and then sticks her head in the bed and tries to find the toy. It looks ridiculious because she walks around with a dog bed on her head while she's finding the toy.</p> 
+            </div>
+            <div class = "pets-two">
+                <h3>Photo Gallery</h3>
+                <!-- Images used to open the lightbox -->
+                            <img src="images/wren_and_yoyo.jpeg" class= "center" width ="200" alt = "Tan and white dog cuddling and resting head on black dog" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                            <img src="images/wren_sleepy.jpeg" class= "center"  width ="200" alt="Tan and white dog sleeping cutely" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                            <img src="images/wren_with_toys.jpeg" class= "center" width ="200" alt="White and tan dog chewing and toy and surrounded by many, many toys" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                            <img src="images/wren_unicorn.jpeg" class= "center" width ="200" alt="A tan and white dog wearing a unicorn costume" onclick="openModal();currentSlide(5)" class="hover-shadow">
+                            <img src="images/wren_sweater.jpeg" class= "center" width ="200" alt="A tan and white dog wearing a pink and blue striped sweater" onclick="openModal();currentSlide(6)" class="hover-shadow">
+                    
+            </div>
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="images/wren.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="images/wren_and_yoyo.jpeg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="images/wren_sleepy.jpeg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="images/wren_with_toys.jpeg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="images/wren_unicorn.jpeg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="images/wren_sweater.jpeg" style="width:100%">
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                <!-- Caption text -->
+                <div class="caption-container">
+                <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail image controls -->
+                <div class="thumbnails-container">
+                    <div class="column">
+                        <img class="demo" src="images/wren.jpg" onclick="currentSlide(1)" alt="Tan and white dog lying on couch surrounded by Christmas lights">
+                        </div>
+
+                    <div class="column">
+                    <img class="demo" src="images/wren_and_yoyo.jpeg" onclick="currentSlide(2)" alt="Tan and white dog cuddling and resting head on black dog">
+                    </div>
+
+                    <div class="column">
+                    <img class="demo" src="images/wren_sleepy.jpeg" onclick="currentSlide(3)" alt="Tan and white dog sleeping cutely">
+                    </div>
+
+                    <div class="column">
+                    <img class="demo" src="images/wren_with_toys.jpeg" onclick="currentSlide(4)" alt="White and tan dog chewing and toy and surrounded by many, many toys">
+                    </div>
+
+                    <div class="column">
+                    <img class="demo" src="images/wren_unicorn.jpeg" onclick="currentSlide(5)" alt="A tan and white dog wearing a unicorn costume">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="images/wren_sweater.jpeg" onclick="currentSlide(6)" alt="A tan and white dog wearing a pink and blue striped sweater">
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class = "pets-three">
+                <h3>Likes</h3>
+                    <ul>
+                        <li>Playing anything</li>
+                        <li>Snuggling in under the covers</li>
+                        <li>Eating!</li>
+                    </ul>
+            </div>
+                <!-- Sandra Klocinski -->
+        </div>
+
+        <div class = "wrapper">
+            <div class = "pets-one">
+                <h2>Yoyo</h2>
+
+                <img src="images/yoyo.jpg" class= "center" width = "400" alt="Black dog in octopus Halloween costume" onclick="openModal2();currentSlide2(1)" class="hover-shadow">
+
+                <p>Yoyo is a black tan and white dog of about 70 lbs.</p>
+
+                <p>Yoyo is a 6ish year old rescue mixed breed. We adopted him two and a half years ago, but we weren't sure of his age when we adopted him. He is very sweet, cuddly, playful, and wiggly-waggy. He loves to be the safety police and bark at people walking by with dogs, come "save" us from things like the vaccuum cleaner, cuddle, go on walks, and do tricks.</p>
+
+                <p>We call Yoyo "Safety Dog" because he is very safety concious and believes that is his job. If he feels anyone might be alarmed, even though they usually are not, he will trip over himself rushing over, and attempt to ascertain the problem and help. He also likes to tell the food delivery people that this is our house by barking like a crazy dog.</p>
+            </div>
+            <div class = "pets-two">
+                <h3>Photo Gallery</h3>
+                    <img src="images/yoyo_prestige.jpg" class= "center" width ="200" alt = "A large black and white looking prestigous in the backseat of a car" onclick="openModal2();currentSlide2(1)" class="hover-shadow">
+                    <img src="images/lounging_pups.jpeg" class= "center" width ="200" alt="Large black dog lounging upside down, with dog in the background lounging on an armchair" onclick="openModal2();currentSlide(1)" class="hover-shadow">
+                    <img src="images/yoyo_treat.jpeg" class= "center" width ="200" alt="Black and white dog holding a treat">
+                    <img src="images/halloween-dogs.jpeg" class= "center" width ="200" alt="A big black wearing an octopus costume and a tan and white dog wearing a unicorn costume" onclick="openModal2();currentSlide(1)" class="hover-shadow">
+                    <img src="images/expectant_puppies.jpeg" class= "center" width ="200" alt="A big black and a tan and white dog looking expectantly at the cameraperson for treats" onclick="openModal2();currentSlide(1)" class="hover-shadow">
+            </div>
+             <!-- The Modal/Lightbox -->
+             <div id="myModal2" class="modal">
+                <span class="close cursor" onclick="closeModal2()">&times;</span>
+                <div class="modal-content">
+    
+                    <div class="mySlides2">
+                        <div class="numbertext">1 / 6</div>
+                        <img src="images/yoyo.jpg" style="width:100%">
+                    </div>
+    
+                    <div class="mySlides2">
+                        <div class="numbertext">2 / 6</div>
+                        <img src="images/yoyo_prestige.jpg" style="width:100%">
+                    </div>
+    
+                    <div class="mySlides2">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="images/lounging_pups.jpeg" style="width:100%">
+                    </div>
+    
+                    <div class="mySlides2">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="images/yoyo_treat.jpeg" style="width:100%">
+                    </div>
+    
+                    <div class="mySlides2">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="images/halloween-dogs.jpeg" style="width:100%">
+                    </div>
+    
+                    <div class="mySlides2">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="images/expectant_puppies.jpeg" style="width:100%">
+                    </div>
+    
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+                    
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                    <p id="caption"></p>
+                    </div>
+    
+                    <!-- Thumbnail image controls -->
+                    <div class="thumbnails-container">
+                        <div class="column">
+                            <img class="demo" src="images/yoyo.jpg" onclick="currentSlide2(1)" alt="Black dog in octopus Halloween costume">
+                            </div>
+        
+                        <div class="column">
+                        <img class="demo" src="images/yoyo_prestige.jpg" onclick="currentSlide2(2)" alt="A large black and white looking prestigous in the backseat of a car">
+                        </div>
+        
+                        <div class="column">
+                        <img class="demo" src="images/lounging_pups.jpeg" onclick="currentSlide2(3)" alt="Large black dog lounging upside down, with dog in the background lounging on an armchair">
+                        </div>
+        
+                        <div class="column">
+                        <img class="demo" src="images/yoyo_treat.jpeg" onclick="currentSlide2(4)" alt="Black and white dog holding a treat">
+                        </div>
+        
+                        <div class="column">
+                        <img class="demo" src="images/halloween-dogs.jpeg" onclick="currentSlide2(5)" alt="A big black wearing an octopus costume and a tan and white dog wearing a unicorn costume">
+                        </div>
+        
+                        <div class="column">
+                            <img class="demo" src="images/expectant_puppies.jpeg" onclick="currentSlide2(6)" alt="A big black and a tan and white dog looking expectantly at the cameraperson for treats">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "pets-three">
+                <h3>Likes</h3>
+                    <ul>
+                        <li>Barking at the window (even though we try to get him not to!)</li>
+                        <li>Playing, especially wrestling with his sister or playing tug</li>
+                        <li>Lying on our legs</li>
+                    </ul>
+                    <!-- Sandra Klocinski -->
+            </div>
+        </div>
+
+        <div class = "wrapper">
+            <div class = "pets-one">
+                <h2>Milly</h2>
+
+                <img src="images/milly.jpeg" class= "center" width = "400" alt="Big yellow dog looking at camera" onclick="openModal3();currentSlide3(1)" class="hover-shadow">
+
+                <p>Milly is a large yellow Labrador of about 100+ lbs.</p>
+
+                <p>Milly was my beautiful yellow Labrador growing up. We got her as a little pup when I was 10, and had her 13 years. We all loved her so much. She loved to play fetch, play with other dogs, and would even play soccer and tennis with us! She also loved to cuddle and be silly.</p>
+
+                <p>Although very large (120lbs. at one point!) Milly was a gentle giant, and was in fact a bit of a scaredly cat! She would roll over and be submissive to even very small dogs, in order to be friends. She was afraid of sprinklers, and was utterly convinced the sprinklers were trying to follow her home. She loved to cuddle at night, and if I was out too late, she would bark at my bedroom to tell my mom to get me to come home. She was the best friend a kid could ask for. (I just have one photo of her on this computer unfortunately, but I can't not include her, so I've found similar looking dogs for the rest of the gallery.)</p>
+            </div>
+            <div class = "pets-two">
+                <h3>Photo Gallery</h3>
+                    <img src="images/milly1.jpeg" class= "center" width ="200" alt = "Yellow Lab sitting stoically" onclick="openModal3();currentSlide3(2)" class="hover-shadow">
+                    <img src="images/milly_like1.jpeg" class= "center" width ="200" alt="Yellow Lab lying down on the couch" onclick="openModal3();currentSlide3(3)" class="hover-shadow">
+                    <img src="images/milly_waggly.webp" class= "center" width ="200" alt="White and tan dog chewing and toy and surrounded by many, many toys" onclick="openModal3();currentSlide3(4)" class="hover-shadow">
+                    <img src="images/milly_pups.jpeg" class= "center" width ="200" alt="Many yellow lab puppies looking at the camera" onclick="openModal3();currentSlide3(5)" class="hover-shadow">
+            </div>
+            <!-- The Modal/Lightbox -->
+            <div id="myModal3" class="modal">
+                <span class="close cursor" onclick="closeModal3()">&times;</span>
+                <div class="modal-content">
+    
+                    <div class="mySlides3">
+                        <div class="numbertext">1 / 5</div>
+                        <img src="images/milly.jpeg" style="width:100%">
+                    </div>
+    
+                    <div class="mySlides3">
+                        <div class="numbertext">2 / 5</div>
+                        <img src="images/milly1.jpeg" style="width:100%">
+                    </div>
+    
+                    <div class="mySlides3">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="images/milly_like1.jpeg" style="width:100%">
+                    </div>
+    
+                    <div class="mySlides3">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="images/milly_waggly.webp" style="width:100%">
+                    </div>
+    
+                    <div class="mySlides3">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="images/milly_pups.jpeg" style="width:100%">
+                    </div>
+    
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides3(1)">&#10095;</a>
+                    
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                    <p id="caption"></p>
+                    </div>
+    
+                    <!-- Thumbnail image controls -->
+                    <div class="thumbnails-container">
+                        <div class="column">
+                            <img class="demo" src="images/milly.jpeg" onclick="currentSlide3(1)" alt="Big yellow dog looking at camera">
+                            </div>
+        
+                        <div class="column">
+                        <img class="demo" src="images/milly1.jpeg" onclick="currentSlide3(2)" alt="Yellow Lab sitting stoically">
+                        </div>
+        
+                        <div class="column">
+                        <img class="demo" src="images/milly_like1.jpeg" onclick="currentSlide3(3)" alt="Yellow Lab lying down on the couch">
+                        </div>
+        
+                        <div class="column">
+                        <img class="demo" src="images/milly_waggly.webp" onclick="currentSlide3(4)" alt="White and tan dog chewing and toy and surrounded by many, many toys">
+                        </div>
+        
+                        <div class="column">
+                        <img class="demo" src="images/milly_pups.jpeg" onclick="currentSlide3(5)" alt="Many yellow lab puppies looking at the camera">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "pets-three">
+                <h3>Likes</h3>
+                    <ul>
+                        <li>Playing fetch</li>
+                        <li>Swimming</li>
+                        <li>Cuddling</li>
+                    </ul>
+            </div>
+                    <!-- Sandra Klocinski -->
+        </div>
+
+        <div class = "wrapper">
+            <div class = "pets-one">
+                <h2>Jagger</h2>
+
+                <img src="images/jagger.jpeg" class= "center" width = "400" alt="Black dog looking at camera" onclick="openModal4();currentSlide4(1)" class="hover-shadow">
+
+                <p>Jagger was a medium-large Rottwieler mix, that was tri-color, but mostly black.</p>
+
+                <p>Jagger was my partner's family dog. He was incredibly smart, and very kind and loyal. He was so intelligent it was shocking. He loved animals, and was very kind to small dogs and cats. He loved to be wherever his people were. We loved him very much, and he would accompany us on many dates. Everyone in the family loved him so much people would argue over who got to bring him with them to do something!</p>
+
+                <p>He was very silly even though he was so smart. There were two pre-teen girls in his family, and he learned he got a lot of love and could sneak food items when hanging out with them and their friends, since everyone loved him! When he was over at my house when I was hanging out with my partner, if my younger sister had friends over, nothing could keep him from joining in the fun- and stealing a cookie or trying to eat out of the chip bag!</p>
+            </div>
+            <div class = "pets-two">
+                <h3>Photo Gallery</h3>
+                    <img src="images/jagger_cuddle.jpeg" class= "center" width ="200" alt = "Black dog cuddling upside with human" onclick="openModal4();currentSlide4(2)" class="hover-shadow">
+                    <img src="images/jagger_butt.jpeg" class= "center" width ="200" alt="Black dog butt sticking out from under bed" onclick="openModal4();currentSlide4(3)" class="hover-shadow">
+                    <img src="images/jagger_dork.jpeg" class= "center" width ="200" alt="Black dog chewing his lip and looking silly" onclick="openModal4();currentSlide4(4)" class="hover-shadow">
+                    <img src="images/jagger_car.jpeg" class= "center" width ="200" alt="A black dog looking happy in the car" onclick="openModal4();currentSlide4(5)" class="hover-shadow">
+                    <img src="images/jagger_halloween.jpeg" class= "center" width ="200" alt="A black dog dressed like a witch and a white and tan dog with costume wings" onclick="openModal4();currentSlide4(6)" class="hover-shadow">
+            </div>
+            <!-- The Modal/Lightbox -->
+            <div id="myModal4" class="modal">
+                <span class="close cursor" onclick="closeModal4()">&times;</span>
+                <div class="modal-content">
+    
+                    <div class="mySlides4">
+                        <div class="numbertext">1 / 6</div>
+                        <img src="images/jagger.jpeg" style="width:100%">
+                    </div>
+    
+                    <div class="mySlides4">
+                        <div class="numbertext">2 / 6</div>
+                        <img src="images/jagger_cuddle.jpeg"" style="width:100%">
+                    </div>
+    
+                    <div class="mySlides4">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="images/jagger_butt.jpeg" style="width:100%">
+                    </div>
+    
+                    <div class="mySlides4">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="images/jagger_dork.jpeg" style="width:100%">
+                    </div>
+    
+                    <div class="mySlides4">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="images/jagger_car.jpeg" style="width:100%">
+                    </div>
+    
+                    <div class="mySlides4">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="images/jagger_halloween.jpeg" style="width:100%">
+                    </div>
+    
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides4(1)">&#10095;</a>
+                    
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                    <p id="caption"></p>
+                    </div>
+    
+                    <!-- Thumbnail image controls -->
+                    <div class="thumbnails-container">
+                        <div class="column">
+                            <img class="demo" src="images/jagger.jpeg" onclick="currentSlide4(1)" alt="Black dog looking at camera">
+                            </div>
+        
+                        <div class="column">
+                        <img class="demo" src="images/jagger_cuddle.jpeg"" onclick="currentSlide4(2)" alt="Black dog cuddling upside with human">
+                        </div>
+        
+                        <div class="column">
+                        <img class="demo" src="images/jagger_butt.jpeg" onclick="currentSlide4(3)" alt="Black dog butt sticking out from under bed">
+                        </div>
+        
+                        <div class="column">
+                        <img class="demo" src="images/jagger_dork.jpeg" onclick="currentSlide4(4)" alt="Black dog chewing his lip and looking silly">
+                        </div>
+        
+                        <div class="column">
+                        <img class="demo" src="images/jagger_car.jpeg" onclick="currentSlide4(5)" alt="A black dog looking happy in the car">
+                        </div>
+        
+                        <div class="column">
+                            <img class="demo" src="images/jagger_halloween.jpeg" onclick="currentSlide4(6)" alt="A black dog dressed like a witch and a white and tan dog with costume wings">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "pets-three">
+                <h3>Likes</h3>
+                    <ul>
+                        <li>Cuddling</li>
+                        <li>Walks</li>
+                        <li>Food</li>
+                        <li>Anything involving thinking through something</li>
+                    </ul>
+            </div>
+            <!-- Sandra Klocinski -->
+        </div>
+        <div class = "wrapper">
+            <div class = "pets-one">
+                <h2>Shai</h2>
+
+                <img src="images/shai_puppy.jpg" class= "center" width = "400" alt="Tiny black puppy looking at camera" onclick="openModal5();currentSlide5(1)" class="hover-shadow">
+
+                <p>Shai was a mini-Dachshund, that was black and tan, but mostly black with tan points.</p>
+
+                <p>Shai was my sister's dog that she got when she went to college. She spent a lot of time at the family house, and we all loved her very much. She was mishevious, and very sweet, and quite smart! She lived for over 13 years, and was also loved dearly.</p>
+
+                <p>Often she would hop around like a little bunny! When the snow got too deep, she would also stick her head up like a ground hog when she was outside! She was so happy when my sister had children, and she loved the kids more than anything.</p>
+            </div>
+            <div class = "pets-two">
+                <h3>Photo Gallery</h3>
+                    <img src="images/shai_lounging.jpeg" class= "center" width ="200" alt = "Black mini-Dachshund lounging upside down" onclick="openModal5();currentSlide5(2)" class="hover-shadow">
+                    <img src="images/shai_cute.jpeg" class= "center" width ="200" alt="Black mini-Dachshund looking cute in a blanket" onclick="openModal5();currentSlide5(3)" class="hover-shadow">
+                    <img src="images/shai_baby.jpeg" class= "center" width ="200" alt="Black mini-Dachshund cuddling with a baby" onclick="openModal5();currentSlide5(4)" class="hover-shadow">
+                    <img src="images/shai_cash.jpeg" class= "center" width ="200" alt="Black mini-Dachshund with a large black dog" onclick="openModal5();currentSlide5(5)" class="hover-shadow">
+            </div>
+            <!-- The Modal/Lightbox -->
+            <div id="myModal5" class="modal">
+                <span class="close cursor" onclick="closeModal5()">&times;</span>
+                <div class="modal-content">
+    
+                    <div class="mySlides5">
+                        <div class="numbertext">1 / 5</div>
+                        <img src="images/shai_puppy.jpg" style="width:100%">
+                    </div>
+    
+                    <div class="mySlides5">
+                        <div class="numbertext">2 / 5</div>
+                        <img src="images/shai_lounging.jpeg"" style="width:100%">
+                    </div>
+    
+                    <div class="mySlides5">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="images/shai_cute.jpeg" style="width:100%">
+                    </div>
+    
+                    <div class="mySlides5">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="images/shai_baby.jpeg" style="width:100%">
+                    </div>
+    
+                    <div class="mySlides5">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="images/shai_cash.jpeg" style="width:100%">
+                    </div>
+    
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides5(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides5(1)">&#10095;</a>
+                    
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                    <p id="caption"></p>
+                    </div>
+    
+                    <!-- Thumbnail image controls -->
+                    <div class="thumbnails-container">
+                        <div class="column">
+                            <img class="demo" src="images/shai_puppy.jpg" onclick="currentSlide5(1)" alt="Tiny black puppy looking at camera">
+                            </div>
+        
+                        <div class="column">
+                        <img class="demo" src="images/shai_lounging.jpeg" onclick="currentSlide5(2)" alt="Black mini-Dachshund lounging upside down">
+                        </div>
+        
+                        <div class="column">
+                        <img class="demo" src="images/shai_cute.jpeg" onclick="currentSlide5(3)" alt="Black mini-Dachshund looking cute in a blanket">
+                        </div>
+        
+                        <div class="column">
+                        <img class="demo" src="images/shai_baby.jpeg" onclick="currentSlide5(4)" alt="Black mini-Dachshund cuddling with a baby">
+                        </div>
+        
+                        <div class="column">
+                        <img class="demo" src="images/shai_cash.jpeg" onclick="currentSlide5(5)" alt="Black mini-Dachshund with a large black dog">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "pets-three">
+                <h3>Likes</h3>
+                    <ul>
+                        <li>Kids (especially my sister's kids)</li>
+                        <li>Adventures</li>
+                        <li>Food</li>
+                        <li>Going under the covers</li>
+                    </ul>
+            </div>
+            <!-- Sandra Klocinski -->
+        </div>
+    </main>
+    
+
+    <footer>
+        <p>University of Michigan <br/>	
+        &copy; Sandra Klocinski - Web Design 2024</p>	
+    </footer>
+</body>
+</html>
