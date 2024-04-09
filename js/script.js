@@ -131,7 +131,7 @@ function closeModal4() {
 }
 
 var slideIndex4 = 1;
-showSlides(slideIndex4);
+showSlides4(slideIndex4);
 
 // Next/previous controls
 function plusSlides4(n) {
@@ -172,7 +172,7 @@ function closeModal5() {
 }
 
 var slideIndex5 = 1;
-showSlides(slideIndex5);
+showSlides5(slideIndex5);
 
 // Next/previous controls
 function plusSlides5(n) {
